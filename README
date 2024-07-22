@@ -1,0 +1,27 @@
+messing around contains stuff that i was just messing around with. 
+-instead of using yfinance i tried to use some other library
+-i might switch it to the other library just because it has a news feature which could help with sentiment analysis
+
+sentiment analysis section
+-contains code from a youtube video on sentiment analysis trading
+-the bot in the video did pretty well showing a 500% gain over 5 years through just trading SPY on positive and negative sentiment 
+-the files for that code are finebert_util.py and tradingboy.py 
+-i played around with the og code for that so it isnt the same as what it used to be but i think i can adjust it so it performs well. 
+-not sure if it was doing options trading though 
+
+NEWNEWS.py 
+-this is under sentiment
+-uses some online stock news site and parses through the raw html of it looking for just the article titles 
+-a few sentiment analysis options
+    --from flair.models import TextClassifier
+        from flair.data import Sentence
+    --import nltk
+        from nltk.sentiment import SentimentIntensityAnalyzer
+        nltk.download('vader_lexicon')
+        import operator
+    --from textblob import TextBlob
+
+main.ibynp
+-this is rivero's og code which ig he used as a foundation for his project
+-he said he also used sentiment analysis but he didnt give us the code for that
+-the goal is to achieve something similar to his which was (allegedly) 3000% in about 3 months. 
